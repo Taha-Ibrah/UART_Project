@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1783664131" />
+    <testcase name="test_reset" classname="baud_gen_test" file="/Users/taha.ibrah/Downloads/UART_Project/tb/baud_gen_test.py" lineno="5" time="0.00016117095947265625" sim_time_ns="20.0" ratio_time="124091.83431952662" />
+    <testcase name="test_tick_period" classname="baud_gen_test" file="/Users/taha.ibrah/Downloads/UART_Project/tb/baud_gen_test.py" lineno="27" time="0.0035789012908935547" sim_time_ns="13040.0" ratio_time="3643576.321364333" />
+    <testcase name="test_tick_width" classname="baud_gen_test" file="/Users/taha.ibrah/Downloads/UART_Project/tb/baud_gen_test.py" lineno="60" time="0.0018260478973388672" sim_time_ns="6560.0" ratio_time="3592457.7934456198" />
+  </testsuite>
+</testsuites>
