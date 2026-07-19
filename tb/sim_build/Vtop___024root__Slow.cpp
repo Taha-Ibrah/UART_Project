@@ -5,10 +5,10 @@
 #include "Vtop__pch.h"
 
 // Parameter definitions for Vtop___024root
-constexpr IData/*31:0*/ Vtop___024root::baud_gen__DOT__CLK_FREQ;
-constexpr IData/*31:0*/ Vtop___024root::baud_gen__DOT__BAUD_RATE;
-constexpr IData/*31:0*/ Vtop___024root::baud_gen__DOT__DIVISOR;
-constexpr IData/*31:0*/ Vtop___024root::baud_gen__DOT__CNT_WIDTH;
+constexpr IData/*31:0*/ Vtop___024root::UART_TX_tl__DOT__baud_gen_inst__DOT__CLK_FREQ;
+constexpr IData/*31:0*/ Vtop___024root::UART_TX_tl__DOT__baud_gen_inst__DOT__BAUD_RATE;
+constexpr IData/*31:0*/ Vtop___024root::UART_TX_tl__DOT__baud_gen_inst__DOT__DIVISOR;
+constexpr IData/*31:0*/ Vtop___024root::UART_TX_tl__DOT__baud_gen_inst__DOT__CNT_WIDTH;
 
 
 void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf);
