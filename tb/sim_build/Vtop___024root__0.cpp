@@ -34,29 +34,30 @@ void Vtop___024root___ico_sequent__TOP__0(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
-    vlSelfRef.UART_TX_tl__DOT__tx_data = vlSelfRef.tx_data;
-    vlSelfRef.UART_TX_tl__DOT__tx_start = vlSelfRef.tx_start;
-    vlSelfRef.UART_TX_tl__DOT__tx_busy = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy;
-    vlSelfRef.UART_TX_tl__DOT__tx = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx;
-    vlSelfRef.UART_TX_tl__DOT__tick = vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick;
-    vlSelfRef.UART_TX_tl__DOT__clk = vlSelfRef.clk;
-    vlSelfRef.UART_TX_tl__DOT__rst_n = vlSelfRef.rst_n;
-    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_data 
-        = vlSelfRef.UART_TX_tl__DOT__tx_data;
-    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_start 
-        = vlSelfRef.UART_TX_tl__DOT__tx_start;
-    vlSelfRef.tx_busy = vlSelfRef.UART_TX_tl__DOT__tx_busy;
-    vlSelfRef.tx = vlSelfRef.UART_TX_tl__DOT__tx;
-    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick 
-        = vlSelfRef.UART_TX_tl__DOT__tick;
-    vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__clk 
-        = vlSelfRef.UART_TX_tl__DOT__clk;
-    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__clk 
-        = vlSelfRef.UART_TX_tl__DOT__clk;
-    vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__rst_n 
-        = vlSelfRef.UART_TX_tl__DOT__rst_n;
-    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__rst_n 
-        = vlSelfRef.UART_TX_tl__DOT__rst_n;
+    vlSelfRef.UART_RX_tl__DOT__rx = vlSelfRef.rx;
+    vlSelfRef.UART_RX_tl__DOT__rx_byte = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_byte;
+    vlSelfRef.UART_RX_tl__DOT__rx_done = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_done;
+    vlSelfRef.UART_RX_tl__DOT__rx_error = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_error;
+    vlSelfRef.UART_RX_tl__DOT__rx_busy = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_busy;
+    vlSelfRef.UART_RX_tl__DOT__tick = vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick;
+    vlSelfRef.UART_RX_tl__DOT__clk = vlSelfRef.clk;
+    vlSelfRef.UART_RX_tl__DOT__rst_n = vlSelfRef.rst_n;
+    vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx 
+        = vlSelfRef.UART_RX_tl__DOT__rx;
+    vlSelfRef.rx_byte = vlSelfRef.UART_RX_tl__DOT__rx_byte;
+    vlSelfRef.rx_done = vlSelfRef.UART_RX_tl__DOT__rx_done;
+    vlSelfRef.rx_error = vlSelfRef.UART_RX_tl__DOT__rx_error;
+    vlSelfRef.rx_busy = vlSelfRef.UART_RX_tl__DOT__rx_busy;
+    vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick 
+        = vlSelfRef.UART_RX_tl__DOT__tick;
+    vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__clk 
+        = vlSelfRef.UART_RX_tl__DOT__clk;
+    vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__clk 
+        = vlSelfRef.UART_RX_tl__DOT__clk;
+    vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__rst_n 
+        = vlSelfRef.UART_RX_tl__DOT__rst_n;
+    vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rst_n 
+        = vlSelfRef.UART_RX_tl__DOT__rst_n;
 }
 
 void Vtop___024root___eval_ico(Vtop___024root* vlSelf) {
@@ -65,29 +66,30 @@ void Vtop___024root___eval_ico(Vtop___024root* vlSelf) {
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     if ((1ULL & vlSelfRef.__VicoTriggered[0U])) {
-        vlSelfRef.UART_TX_tl__DOT__tx_data = vlSelfRef.tx_data;
-        vlSelfRef.UART_TX_tl__DOT__tx_start = vlSelfRef.tx_start;
-        vlSelfRef.UART_TX_tl__DOT__tx_busy = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy;
-        vlSelfRef.UART_TX_tl__DOT__tx = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx;
-        vlSelfRef.UART_TX_tl__DOT__tick = vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick;
-        vlSelfRef.UART_TX_tl__DOT__clk = vlSelfRef.clk;
-        vlSelfRef.UART_TX_tl__DOT__rst_n = vlSelfRef.rst_n;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_data 
-            = vlSelfRef.UART_TX_tl__DOT__tx_data;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_start 
-            = vlSelfRef.UART_TX_tl__DOT__tx_start;
-        vlSelfRef.tx_busy = vlSelfRef.UART_TX_tl__DOT__tx_busy;
-        vlSelfRef.tx = vlSelfRef.UART_TX_tl__DOT__tx;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick 
-            = vlSelfRef.UART_TX_tl__DOT__tick;
-        vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__clk 
-            = vlSelfRef.UART_TX_tl__DOT__clk;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__clk 
-            = vlSelfRef.UART_TX_tl__DOT__clk;
-        vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__rst_n 
-            = vlSelfRef.UART_TX_tl__DOT__rst_n;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__rst_n 
-            = vlSelfRef.UART_TX_tl__DOT__rst_n;
+        vlSelfRef.UART_RX_tl__DOT__rx = vlSelfRef.rx;
+        vlSelfRef.UART_RX_tl__DOT__rx_byte = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_byte;
+        vlSelfRef.UART_RX_tl__DOT__rx_done = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_done;
+        vlSelfRef.UART_RX_tl__DOT__rx_error = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_error;
+        vlSelfRef.UART_RX_tl__DOT__rx_busy = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_busy;
+        vlSelfRef.UART_RX_tl__DOT__tick = vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick;
+        vlSelfRef.UART_RX_tl__DOT__clk = vlSelfRef.clk;
+        vlSelfRef.UART_RX_tl__DOT__rst_n = vlSelfRef.rst_n;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx 
+            = vlSelfRef.UART_RX_tl__DOT__rx;
+        vlSelfRef.rx_byte = vlSelfRef.UART_RX_tl__DOT__rx_byte;
+        vlSelfRef.rx_done = vlSelfRef.UART_RX_tl__DOT__rx_done;
+        vlSelfRef.rx_error = vlSelfRef.UART_RX_tl__DOT__rx_error;
+        vlSelfRef.rx_busy = vlSelfRef.UART_RX_tl__DOT__rx_busy;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick 
+            = vlSelfRef.UART_RX_tl__DOT__tick;
+        vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__clk 
+            = vlSelfRef.UART_RX_tl__DOT__clk;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__clk 
+            = vlSelfRef.UART_RX_tl__DOT__clk;
+        vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__rst_n 
+            = vlSelfRef.UART_RX_tl__DOT__rst_n;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rst_n 
+            = vlSelfRef.UART_RX_tl__DOT__rst_n;
     }
 }
 
@@ -121,15 +123,15 @@ void Vtop___024root___eval_triggers_vec__act(Vtop___024root* vlSelf) {
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     vlSelfRef.__VactTriggered[0U] = (QData)((IData)(
-                                                    ((((IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__clk) 
-                                                       & (~ (IData)(vlSelfRef.__Vtrigprevexpr___TOP__UART_TX_tl__DOT__uart_tx_inst__DOT__clk__0))) 
+                                                    ((((IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__clk) 
+                                                       & (~ (IData)(vlSelfRef.__Vtrigprevexpr___TOP__UART_RX_tl__DOT__uart_rx_inst__DOT__clk__0))) 
                                                       << 1U) 
-                                                     | ((IData)(vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__clk) 
-                                                        & (~ (IData)(vlSelfRef.__Vtrigprevexpr___TOP__UART_TX_tl__DOT__baud_gen_inst__DOT__clk__0))))));
-    vlSelfRef.__Vtrigprevexpr___TOP__UART_TX_tl__DOT__baud_gen_inst__DOT__clk__0 
-        = vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__clk;
-    vlSelfRef.__Vtrigprevexpr___TOP__UART_TX_tl__DOT__uart_tx_inst__DOT__clk__0 
-        = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__clk;
+                                                     | ((IData)(vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__clk) 
+                                                        & (~ (IData)(vlSelfRef.__Vtrigprevexpr___TOP__UART_RX_tl__DOT__baud_gen_inst__DOT__clk__0))))));
+    vlSelfRef.__Vtrigprevexpr___TOP__UART_RX_tl__DOT__baud_gen_inst__DOT__clk__0 
+        = vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__clk;
+    vlSelfRef.__Vtrigprevexpr___TOP__UART_RX_tl__DOT__uart_rx_inst__DOT__clk__0 
+        = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__clk;
 }
 
 bool Vtop___024root___trigger_anySet__act(const VlUnpacked<QData/*63:0*/, 1> &in) {
@@ -152,27 +154,27 @@ void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Locals
-    SData/*8:0*/ __Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count;
-    __Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count = 0;
+    SData/*8:0*/ __Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count;
+    __Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count = 0;
     // Body
-    __Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count 
-        = vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__count;
-    if (vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__rst_n) {
-        if ((0x0144U == (IData)(vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__count))) {
-            __Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count = 0U;
-            vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick = 1U;
+    __Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count 
+        = vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__count;
+    if (vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__rst_n) {
+        if ((0x0144U == (IData)(vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__count))) {
+            __Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count = 0U;
+            vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick = 1U;
         } else {
-            __Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count 
-                = (0x000001ffU & ((IData)(1U) + (IData)(vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__count)));
-            vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick = 0U;
+            __Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count 
+                = (0x000001ffU & ((IData)(1U) + (IData)(vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__count)));
+            vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick = 0U;
         }
     } else {
-        __Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count = 0U;
-        vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick = 0U;
+        __Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count = 0U;
+        vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick = 0U;
     }
-    vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__count 
-        = __Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count;
-    vlSelfRef.UART_TX_tl__DOT__tick = vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick;
+    vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__count 
+        = __Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count;
+    vlSelfRef.UART_RX_tl__DOT__tick = vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick;
 }
 
 void Vtop___024root___nba_sequent__TOP__1(Vtop___024root* vlSelf) {
@@ -180,89 +182,147 @@ void Vtop___024root___nba_sequent__TOP__1(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Locals
-    CData/*3:0*/ __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count;
-    __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0;
-    CData/*1:0*/ __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state;
-    __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 0;
+    CData/*3:0*/ __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count;
+    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count = 0;
+    CData/*1:0*/ __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__state;
+    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__state = 0;
+    CData/*7:0*/ __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg;
+    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg = 0;
+    CData/*2:0*/ __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index;
+    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index = 0;
     // Body
-    __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count 
-        = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count;
-    __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state 
-        = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__state;
-    if (vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__rst_n) {
-        if ((2U & (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__state))) {
-            if ((1U & (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__state))) {
-                vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx = 1U;
-                if (vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick) {
-                    if ((0x0fU == (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count))) {
-                        __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0U;
-                        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy = 0U;
-                        __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 0U;
-                    } else {
-                        __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count 
+    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count 
+        = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count;
+    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__state 
+        = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__state;
+    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg 
+        = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg;
+    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index 
+        = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index;
+    if (vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rst_n) {
+        if ((2U & (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__state))) {
+            if ((1U & (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__state))) {
+                if (vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick) {
+                    if ((8U == (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count))) {
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count 
                             = (0x0000000fU & ((IData)(1U) 
-                                              + (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count)));
+                                              + (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count)));
+                        if (vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx) {
+                            vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_done = 1U;
+                        } else {
+                            vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_error = 1U;
+                        }
+                    } else if ((0x0fU == (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count))) {
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count = 0U;
+                        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_busy = 0U;
+                        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_done = 0U;
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__state = 0U;
+                    } else {
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count 
+                            = (0x0000000fU & ((IData)(1U) 
+                                              + (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count)));
                     }
                 }
-            } else {
-                vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx 
-                    = (1U & ((IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_shift_reg) 
-                             >> (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index)));
-                if (vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick) {
-                    if ((0x0fU == (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count))) {
-                        __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0U;
-                        if ((7U == (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index))) {
-                            __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 3U;
-                        } else {
-                            vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index 
-                                = (7U & ((IData)(1U) 
-                                         + (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index)));
-                        }
-                    } else {
-                        __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count 
+            } else if (vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick) {
+                if ((7U == (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index))) {
+                    if ((8U == (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count))) {
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count 
                             = (0x0000000fU & ((IData)(1U) 
-                                              + (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count)));
+                                              + (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count)));
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg 
+                            = (((~ ((IData)(1U) << (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index))) 
+                                & (IData)(__Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg)) 
+                               | (0x00ffU & ((IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx) 
+                                             << (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index))));
+                    } else if ((0x0fU == (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count))) {
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index 
+                            = (7U & ((IData)(1U) + (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index)));
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count = 0U;
+                        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_byte 
+                            = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg;
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__state = 3U;
+                    } else {
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count 
+                            = (0x0000000fU & ((IData)(1U) 
+                                              + (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count)));
                     }
+                } else if ((8U == (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count))) {
+                    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count 
+                        = (0x0000000fU & ((IData)(1U) 
+                                          + (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count)));
+                    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg 
+                        = (((~ ((IData)(1U) << (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index))) 
+                            & (IData)(__Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg)) 
+                           | (0x00ffU & ((IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx) 
+                                         << (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index))));
+                } else if ((0x0fU == (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count))) {
+                    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index 
+                        = (7U & ((IData)(1U) + (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index)));
+                    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count = 0U;
+                } else {
+                    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count 
+                        = (0x0000000fU & ((IData)(1U) 
+                                          + (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count)));
                 }
             }
-        } else if ((1U & (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__state))) {
-            vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx = 0U;
-            if (vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick) {
-                if ((0x0fU == (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count))) {
-                    __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0U;
-                    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index = 0U;
-                    __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 2U;
+        } else if ((1U & (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__state))) {
+            if (vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick) {
+                if ((0x0fU == (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count))) {
+                    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count = 0U;
+                    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__state = 2U;
+                } else if ((8U == (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count))) {
+                    if (vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx) {
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__state = 0U;
+                    } else {
+                        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count 
+                            = (0x0000000fU & ((IData)(1U) 
+                                              + (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count)));
+                    }
                 } else {
-                    __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count 
+                    __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count 
                         = (0x0000000fU & ((IData)(1U) 
-                                          + (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count)));
+                                          + (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count)));
                 }
             }
         } else {
-            vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx = 1U;
-            if (vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_start) {
-                __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0U;
-                vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_shift_reg 
-                    = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_data;
-                vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy = 1U;
-                __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 1U;
+            vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_busy = 0U;
+            vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_done = 0U;
+            vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_error = 0U;
+            if (((~ (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx)) 
+                 & (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_prev))) {
+                __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count = 0U;
+                __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index = 0U;
+                vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_busy = 1U;
+                __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__state = 1U;
             }
         }
     } else {
-        __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0U;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index = 0U;
-        __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 0U;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx = 1U;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy = 0U;
+        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index = 0U;
+        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count = 0U;
+        __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__state = 0U;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_error = 0U;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_busy = 0U;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_done = 0U;
     }
-    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count 
-        = __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count;
-    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__state 
-        = __Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state;
-    vlSelfRef.UART_TX_tl__DOT__tx = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx;
-    vlSelfRef.UART_TX_tl__DOT__tx_busy = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy;
-    vlSelfRef.tx = vlSelfRef.UART_TX_tl__DOT__tx;
-    vlSelfRef.tx_busy = vlSelfRef.UART_TX_tl__DOT__tx_busy;
+    vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count 
+        = __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count;
+    vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__state 
+        = __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__state;
+    vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg 
+        = __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg;
+    vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index 
+        = __Vdly__UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index;
+    vlSelfRef.UART_RX_tl__DOT__rx_done = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_done;
+    vlSelfRef.UART_RX_tl__DOT__rx_error = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_error;
+    vlSelfRef.UART_RX_tl__DOT__rx_busy = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_busy;
+    vlSelfRef.UART_RX_tl__DOT__rx_byte = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_byte;
+    vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_prev 
+        = ((1U & (~ (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rst_n))) 
+           || (IData)(vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx));
+    vlSelfRef.rx_done = vlSelfRef.UART_RX_tl__DOT__rx_done;
+    vlSelfRef.rx_error = vlSelfRef.UART_RX_tl__DOT__rx_error;
+    vlSelfRef.rx_busy = vlSelfRef.UART_RX_tl__DOT__rx_busy;
+    vlSelfRef.rx_byte = vlSelfRef.UART_RX_tl__DOT__rx_byte;
 }
 
 void Vtop___024root___nba_sequent__TOP__2(Vtop___024root* vlSelf) {
@@ -270,8 +330,8 @@ void Vtop___024root___nba_sequent__TOP__2(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
-    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick 
-        = vlSelfRef.UART_TX_tl__DOT__tick;
+    vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick 
+        = vlSelfRef.UART_RX_tl__DOT__tick;
 }
 
 void Vtop___024root___eval_nba(Vtop___024root* vlSelf) {
@@ -279,116 +339,35 @@ void Vtop___024root___eval_nba(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Locals
-    SData/*8:0*/ __Vinline__nba_sequent__TOP__0___Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count;
-    __Vinline__nba_sequent__TOP__0___Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count = 0;
-    CData/*3:0*/ __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count;
-    __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0;
-    CData/*1:0*/ __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state;
-    __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 0;
+    SData/*8:0*/ __Vinline__nba_sequent__TOP__0___Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count;
+    __Vinline__nba_sequent__TOP__0___Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count = 0;
     // Body
     if ((1ULL & vlSelfRef.__VnbaTriggered[0U])) {
-        __Vinline__nba_sequent__TOP__0___Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count 
-            = vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__count;
-        if (vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__rst_n) {
-            if ((0x0144U == (IData)(vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__count))) {
-                __Vinline__nba_sequent__TOP__0___Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count = 0U;
-                vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick = 1U;
+        __Vinline__nba_sequent__TOP__0___Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count 
+            = vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__count;
+        if (vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__rst_n) {
+            if ((0x0144U == (IData)(vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__count))) {
+                __Vinline__nba_sequent__TOP__0___Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count = 0U;
+                vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick = 1U;
             } else {
-                __Vinline__nba_sequent__TOP__0___Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count 
-                    = (0x000001ffU & ((IData)(1U) + (IData)(vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__count)));
-                vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick = 0U;
+                __Vinline__nba_sequent__TOP__0___Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count 
+                    = (0x000001ffU & ((IData)(1U) + (IData)(vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__count)));
+                vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick = 0U;
             }
         } else {
-            __Vinline__nba_sequent__TOP__0___Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count = 0U;
-            vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick = 0U;
+            __Vinline__nba_sequent__TOP__0___Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count = 0U;
+            vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick = 0U;
         }
-        vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__count 
-            = __Vinline__nba_sequent__TOP__0___Vdly__UART_TX_tl__DOT__baud_gen_inst__DOT__count;
-        vlSelfRef.UART_TX_tl__DOT__tick = vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick;
+        vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__count 
+            = __Vinline__nba_sequent__TOP__0___Vdly__UART_RX_tl__DOT__baud_gen_inst__DOT__count;
+        vlSelfRef.UART_RX_tl__DOT__tick = vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick;
     }
     if ((2ULL & vlSelfRef.__VnbaTriggered[0U])) {
-        __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count 
-            = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count;
-        __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state 
-            = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__state;
-        if (vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__rst_n) {
-            if ((2U & (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__state))) {
-                if ((1U & (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__state))) {
-                    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx = 1U;
-                    if (vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick) {
-                        if ((0x0fU == (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count))) {
-                            __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0U;
-                            vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy = 0U;
-                            __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 0U;
-                        } else {
-                            __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count 
-                                = (0x0000000fU & ((IData)(1U) 
-                                                  + (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count)));
-                        }
-                    }
-                } else {
-                    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx 
-                        = (1U & ((IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_shift_reg) 
-                                 >> (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index)));
-                    if (vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick) {
-                        if ((0x0fU == (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count))) {
-                            __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0U;
-                            if ((7U == (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index))) {
-                                __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 3U;
-                            } else {
-                                vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index 
-                                    = (7U & ((IData)(1U) 
-                                             + (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index)));
-                            }
-                        } else {
-                            __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count 
-                                = (0x0000000fU & ((IData)(1U) 
-                                                  + (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count)));
-                        }
-                    }
-                }
-            } else if ((1U & (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__state))) {
-                vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx = 0U;
-                if (vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick) {
-                    if ((0x0fU == (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count))) {
-                        __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0U;
-                        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index = 0U;
-                        __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 2U;
-                    } else {
-                        __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count 
-                            = (0x0000000fU & ((IData)(1U) 
-                                              + (IData)(vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count)));
-                    }
-                }
-            } else {
-                vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx = 1U;
-                if (vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_start) {
-                    __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0U;
-                    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_shift_reg 
-                        = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_data;
-                    vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy = 1U;
-                    __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 1U;
-                }
-            }
-        } else {
-            __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = 0U;
-            vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index = 0U;
-            __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state = 0U;
-            vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx = 1U;
-            vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy = 0U;
-        }
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count 
-            = __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__state 
-            = __Vinline__nba_sequent__TOP__1___Vdly__UART_TX_tl__DOT__uart_tx_inst__DOT__state;
-        vlSelfRef.UART_TX_tl__DOT__tx = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx;
-        vlSelfRef.UART_TX_tl__DOT__tx_busy = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy;
-        vlSelfRef.tx = vlSelfRef.UART_TX_tl__DOT__tx;
-        vlSelfRef.tx_busy = vlSelfRef.UART_TX_tl__DOT__tx_busy;
+        Vtop___024root___nba_sequent__TOP__1(vlSelf);
     }
     if ((1ULL & vlSelfRef.__VnbaTriggered[0U])) {
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick 
-            = vlSelfRef.UART_TX_tl__DOT__tick;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick 
+            = vlSelfRef.UART_RX_tl__DOT__tick;
     }
 }
 
@@ -465,7 +444,7 @@ void Vtop___024root___eval(Vtop___024root* vlSelf) {
 #ifdef VL_DEBUG
             Vtop___024root___dump_triggers__ico(vlSelfRef.__VicoTriggered, "ico"s);
 #endif
-            VL_FATAL_MT("/Users/taha.ibrah/Downloads/UART_Project/tb/../rtl/UART_TX_tl.sv", 6, "", "DIDNOTCONVERGE: Input combinational region did not converge after '--converge-limit' of 10000 tries");
+            VL_FATAL_MT("/Users/taha.ibrah/Downloads/UART_Project/tb/../rtl/UART_RX_tl.sv", 6, "", "DIDNOTCONVERGE: Input combinational region did not converge after '--converge-limit' of 10000 tries");
         }
         __VicoIterCount = ((IData)(1U) + __VicoIterCount);
         vlSelfRef.__VicoPhaseResult = Vtop___024root___eval_phase__ico(vlSelf);
@@ -477,7 +456,7 @@ void Vtop___024root___eval(Vtop___024root* vlSelf) {
 #ifdef VL_DEBUG
             Vtop___024root___dump_triggers__act(vlSelfRef.__VnbaTriggered, "nba"s);
 #endif
-            VL_FATAL_MT("/Users/taha.ibrah/Downloads/UART_Project/tb/../rtl/UART_TX_tl.sv", 6, "", "DIDNOTCONVERGE: NBA region did not converge after '--converge-limit' of 10000 tries");
+            VL_FATAL_MT("/Users/taha.ibrah/Downloads/UART_Project/tb/../rtl/UART_RX_tl.sv", 6, "", "DIDNOTCONVERGE: NBA region did not converge after '--converge-limit' of 10000 tries");
         }
         __VnbaIterCount = ((IData)(1U) + __VnbaIterCount);
         vlSelfRef.__VactIterCount = 0U;
@@ -486,7 +465,7 @@ void Vtop___024root___eval(Vtop___024root* vlSelf) {
 #ifdef VL_DEBUG
                 Vtop___024root___dump_triggers__act(vlSelfRef.__VactTriggered, "act"s);
 #endif
-                VL_FATAL_MT("/Users/taha.ibrah/Downloads/UART_Project/tb/../rtl/UART_TX_tl.sv", 6, "", "DIDNOTCONVERGE: Active region did not converge after '--converge-limit' of 10000 tries");
+                VL_FATAL_MT("/Users/taha.ibrah/Downloads/UART_Project/tb/../rtl/UART_RX_tl.sv", 6, "", "DIDNOTCONVERGE: Active region did not converge after '--converge-limit' of 10000 tries");
             }
             vlSelfRef.__VactIterCount = ((IData)(1U) 
                                          + vlSelfRef.__VactIterCount);
@@ -508,8 +487,8 @@ void Vtop___024root___eval_debug_assertions(Vtop___024root* vlSelf) {
     if (VL_UNLIKELY(((vlSelfRef.rst_n & 0xfeU)))) {
         Verilated::overWidthError("rst_n");
     }
-    if (VL_UNLIKELY(((vlSelfRef.tx_start & 0xfeU)))) {
-        Verilated::overWidthError("tx_start");
+    if (VL_UNLIKELY(((vlSelfRef.rx & 0xfeU)))) {
+        Verilated::overWidthError("rx");
     }
 }
 #endif  // VL_DEBUG

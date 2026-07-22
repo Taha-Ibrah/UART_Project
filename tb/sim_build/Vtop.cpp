@@ -11,10 +11,11 @@ Vtop::Vtop(VerilatedContext* _vcontextp__, const char* _vcname__)
     , vlSymsp{new Vtop__Syms(contextp(), _vcname__, this)}
     , clk{vlSymsp->TOP.clk}
     , rst_n{vlSymsp->TOP.rst_n}
-    , tx_data{vlSymsp->TOP.tx_data}
-    , tx_start{vlSymsp->TOP.tx_start}
-    , tx_busy{vlSymsp->TOP.tx_busy}
-    , tx{vlSymsp->TOP.tx}
+    , rx{vlSymsp->TOP.rx}
+    , rx_byte{vlSymsp->TOP.rx_byte}
+    , rx_done{vlSymsp->TOP.rx_done}
+    , rx_error{vlSymsp->TOP.rx_error}
+    , rx_busy{vlSymsp->TOP.rx_busy}
     , rootp{&(vlSymsp->TOP)}
 {
     // Register model with the context

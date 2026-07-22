@@ -1,7 +1,9 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1784443243" />
-    <testcase name="test_idle_state" classname="UART_TX_test" file="/Users/taha.ibrah/Downloads/UART_Project/tb/UART_TX_test.py" lineno="26" time="0.000408172607421875" sim_time_ns="20.0" ratio_time="48998.878504672895" />
-    <testcase name="test_tx_single_byte" classname="UART_TX_test" file="/Users/taha.ibrah/Downloads/UART_Project/tb/UART_TX_test.py" lineno="45" time="0.27687501907348633" sim_time_ns="1040060.0" ratio_time="3756424.1204583147" />
+    <property name="random_seed" value="1784753267" />
+    <testcase name="idle_state_test" classname="UART_RX_test" file="/Users/taha.ibrah/Downloads/UART_Project/tb/UART_RX_test.py" lineno="19" time="0.00016999244689941406" sim_time_ns="20.0" ratio_time="117652.28611500701" />
+    <testcase name="single_byte_test" classname="UART_RX_test" file="/Users/taha.ibrah/Downloads/UART_Project/tb/UART_RX_test.py" lineno="34" time="0.30484986305236816" sim_time_ns="1144040.0" ratio_time="3752798.1431419337" />
+    <testcase name="framing_error_test" classname="UART_RX_test" file="/Users/taha.ibrah/Downloads/UART_Project/tb/UART_RX_test.py" lineno="82" time="0.27202820777893066" sim_time_ns="1040059.9999999998" ratio_time="3823353.498859302" />
+    <testcase name="glitch_start_test" classname="UART_RX_test" file="/Users/taha.ibrah/Downloads/UART_Project/tb/UART_RX_test.py" lineno="115" time="0.019996166229248047" sim_time_ns="78060.0" ratio_time="3903748.3038035054" />
   </testsuite>
 </testsuites>

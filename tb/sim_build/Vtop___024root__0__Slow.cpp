@@ -9,10 +9,10 @@ VL_ATTR_COLD void Vtop___024root___eval_static(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
-    vlSelfRef.__Vtrigprevexpr___TOP__UART_TX_tl__DOT__baud_gen_inst__DOT__clk__0 
-        = vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__clk;
-    vlSelfRef.__Vtrigprevexpr___TOP__UART_TX_tl__DOT__uart_tx_inst__DOT__clk__0 
-        = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__clk;
+    vlSelfRef.__Vtrigprevexpr___TOP__UART_RX_tl__DOT__baud_gen_inst__DOT__clk__0 
+        = vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__clk;
+    vlSelfRef.__Vtrigprevexpr___TOP__UART_RX_tl__DOT__uart_rx_inst__DOT__clk__0 
+        = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__clk;
 }
 
 VL_ATTR_COLD void Vtop___024root___eval_initial(Vtop___024root* vlSelf) {
@@ -46,7 +46,7 @@ VL_ATTR_COLD void Vtop___024root___eval_settle(Vtop___024root* vlSelf) {
 #ifdef VL_DEBUG
             Vtop___024root___dump_triggers__stl(vlSelfRef.__VstlTriggered, "stl"s);
 #endif
-            VL_FATAL_MT("/Users/taha.ibrah/Downloads/UART_Project/tb/../rtl/UART_TX_tl.sv", 6, "", "DIDNOTCONVERGE: Settle region did not converge after '--converge-limit' of 10000 tries");
+            VL_FATAL_MT("/Users/taha.ibrah/Downloads/UART_Project/tb/../rtl/UART_RX_tl.sv", 6, "", "DIDNOTCONVERGE: Settle region did not converge after '--converge-limit' of 10000 tries");
         }
         __VstlIterCount = ((IData)(1U) + __VstlIterCount);
         vlSelfRef.__VstlPhaseResult = Vtop___024root___eval_phase__stl(vlSelf);
@@ -100,29 +100,30 @@ VL_ATTR_COLD void Vtop___024root___eval_stl(Vtop___024root* vlSelf) {
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     if ((1ULL & vlSelfRef.__VstlTriggered[0U])) {
-        vlSelfRef.UART_TX_tl__DOT__tx_data = vlSelfRef.tx_data;
-        vlSelfRef.UART_TX_tl__DOT__tx_start = vlSelfRef.tx_start;
-        vlSelfRef.UART_TX_tl__DOT__tx_busy = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy;
-        vlSelfRef.UART_TX_tl__DOT__tx = vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx;
-        vlSelfRef.UART_TX_tl__DOT__tick = vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__tick;
-        vlSelfRef.UART_TX_tl__DOT__clk = vlSelfRef.clk;
-        vlSelfRef.UART_TX_tl__DOT__rst_n = vlSelfRef.rst_n;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_data 
-            = vlSelfRef.UART_TX_tl__DOT__tx_data;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tx_start 
-            = vlSelfRef.UART_TX_tl__DOT__tx_start;
-        vlSelfRef.tx_busy = vlSelfRef.UART_TX_tl__DOT__tx_busy;
-        vlSelfRef.tx = vlSelfRef.UART_TX_tl__DOT__tx;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__tick 
-            = vlSelfRef.UART_TX_tl__DOT__tick;
-        vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__clk 
-            = vlSelfRef.UART_TX_tl__DOT__clk;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__clk 
-            = vlSelfRef.UART_TX_tl__DOT__clk;
-        vlSelfRef.UART_TX_tl__DOT__baud_gen_inst__DOT__rst_n 
-            = vlSelfRef.UART_TX_tl__DOT__rst_n;
-        vlSelfRef.UART_TX_tl__DOT__uart_tx_inst__DOT__rst_n 
-            = vlSelfRef.UART_TX_tl__DOT__rst_n;
+        vlSelfRef.UART_RX_tl__DOT__rx = vlSelfRef.rx;
+        vlSelfRef.UART_RX_tl__DOT__rx_byte = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_byte;
+        vlSelfRef.UART_RX_tl__DOT__rx_done = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_done;
+        vlSelfRef.UART_RX_tl__DOT__rx_error = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_error;
+        vlSelfRef.UART_RX_tl__DOT__rx_busy = vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx_busy;
+        vlSelfRef.UART_RX_tl__DOT__tick = vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__tick;
+        vlSelfRef.UART_RX_tl__DOT__clk = vlSelfRef.clk;
+        vlSelfRef.UART_RX_tl__DOT__rst_n = vlSelfRef.rst_n;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rx 
+            = vlSelfRef.UART_RX_tl__DOT__rx;
+        vlSelfRef.rx_byte = vlSelfRef.UART_RX_tl__DOT__rx_byte;
+        vlSelfRef.rx_done = vlSelfRef.UART_RX_tl__DOT__rx_done;
+        vlSelfRef.rx_error = vlSelfRef.UART_RX_tl__DOT__rx_error;
+        vlSelfRef.rx_busy = vlSelfRef.UART_RX_tl__DOT__rx_busy;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__tick 
+            = vlSelfRef.UART_RX_tl__DOT__tick;
+        vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__clk 
+            = vlSelfRef.UART_RX_tl__DOT__clk;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__clk 
+            = vlSelfRef.UART_RX_tl__DOT__clk;
+        vlSelfRef.UART_RX_tl__DOT__baud_gen_inst__DOT__rst_n 
+            = vlSelfRef.UART_RX_tl__DOT__rst_n;
+        vlSelfRef.UART_RX_tl__DOT__uart_rx_inst__DOT__rst_n 
+            = vlSelfRef.UART_RX_tl__DOT__rst_n;
     }
 }
 
@@ -171,10 +172,10 @@ VL_ATTR_COLD void Vtop___024root___dump_triggers__act(const VlUnpacked<QData/*63
         VL_DBG_MSGS("         No '" + tag + "' region triggers active\n");
     }
     if ((1U & (IData)(triggers[0U]))) {
-        VL_DBG_MSGS("         '" + tag + "' region trigger index 0 is active: @(posedge UART_TX_tl.baud_gen_inst.clk)\n");
+        VL_DBG_MSGS("         '" + tag + "' region trigger index 0 is active: @(posedge UART_RX_tl.baud_gen_inst.clk)\n");
     }
     if ((1U & (IData)((triggers[0U] >> 1U)))) {
-        VL_DBG_MSGS("         '" + tag + "' region trigger index 1 is active: @(posedge UART_TX_tl.uart_tx_inst.clk)\n");
+        VL_DBG_MSGS("         '" + tag + "' region trigger index 1 is active: @(posedge UART_RX_tl.uart_rx_inst.clk)\n");
     }
 }
 #endif  // VL_DEBUG
@@ -187,32 +188,36 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     const uint64_t __VscopeHash = VL_MURMUR64_HASH(vlSelf->vlNamep);
     vlSelf->clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 16707436170211756652ull);
     vlSelf->rst_n = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 1638864771569018232ull);
-    vlSelf->tx_data = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 14770307426006424685ull);
-    vlSelf->tx_start = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 10922211238440073863ull);
-    vlSelf->tx_busy = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 1130330860826808631ull);
-    vlSelf->tx = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 16692943634734642928ull);
-    vlSelf->UART_TX_tl__DOT__clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 299462285131561756ull);
-    vlSelf->UART_TX_tl__DOT__rst_n = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 7487145708249675002ull);
-    vlSelf->UART_TX_tl__DOT__tx_data = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 9397851294191442034ull);
-    vlSelf->UART_TX_tl__DOT__tx_start = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 9279529511606038465ull);
-    vlSelf->UART_TX_tl__DOT__tx_busy = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 4659712127542606951ull);
-    vlSelf->UART_TX_tl__DOT__tx = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 7606628845044827503ull);
-    vlSelf->UART_TX_tl__DOT__tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 3630211519264204153ull);
-    vlSelf->UART_TX_tl__DOT__baud_gen_inst__DOT__clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 679320614941863281ull);
-    vlSelf->UART_TX_tl__DOT__baud_gen_inst__DOT__rst_n = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 2826962515821966381ull);
-    vlSelf->UART_TX_tl__DOT__baud_gen_inst__DOT__tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 13235269076068873106ull);
-    vlSelf->UART_TX_tl__DOT__baud_gen_inst__DOT__count = VL_SCOPED_RAND_RESET_I(9, __VscopeHash, 14709037978016052878ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 10941430173834459298ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__rst_n = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 4893108086116217668ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 2401408898833249685ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__tx_data = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 292298311589304651ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__tx_start = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 12003004562952219299ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__tx_busy = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 18073227068560703188ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__tx = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 9860952088368657272ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__state = VL_SCOPED_RAND_RESET_I(2, __VscopeHash, 5790311637302239492ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__tick_count = VL_SCOPED_RAND_RESET_I(4, __VscopeHash, 13666936059712303579ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__bit_index = VL_SCOPED_RAND_RESET_I(3, __VscopeHash, 14762643386084336195ull);
-    vlSelf->UART_TX_tl__DOT__uart_tx_inst__DOT__tx_shift_reg = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 1576877034243658636ull);
+    vlSelf->rx = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 7329251852453572689ull);
+    vlSelf->rx_byte = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 5165233808670255665ull);
+    vlSelf->rx_done = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 12502171566431402753ull);
+    vlSelf->rx_error = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 6308253193954522356ull);
+    vlSelf->rx_busy = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 12891554515741745662ull);
+    vlSelf->UART_RX_tl__DOT__clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 4151408230554863206ull);
+    vlSelf->UART_RX_tl__DOT__rst_n = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 13642246914978894603ull);
+    vlSelf->UART_RX_tl__DOT__rx = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 9612923275644722911ull);
+    vlSelf->UART_RX_tl__DOT__rx_byte = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 6049747670500108428ull);
+    vlSelf->UART_RX_tl__DOT__rx_done = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 11176174311481894440ull);
+    vlSelf->UART_RX_tl__DOT__rx_error = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 12125239717594651213ull);
+    vlSelf->UART_RX_tl__DOT__rx_busy = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 14538075129163599715ull);
+    vlSelf->UART_RX_tl__DOT__tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 7827056928909280419ull);
+    vlSelf->UART_RX_tl__DOT__baud_gen_inst__DOT__clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 12332185834208159425ull);
+    vlSelf->UART_RX_tl__DOT__baud_gen_inst__DOT__rst_n = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 4450232011671857956ull);
+    vlSelf->UART_RX_tl__DOT__baud_gen_inst__DOT__tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 11936478238948021559ull);
+    vlSelf->UART_RX_tl__DOT__baud_gen_inst__DOT__count = VL_SCOPED_RAND_RESET_I(9, __VscopeHash, 9882732159577918745ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 1907884184717070652ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__rst_n = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 4607132401282749229ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 1538484496511038994ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__rx = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 12742447617138965400ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__rx_byte = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 8934101075605374160ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__rx_done = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 9912155994210378727ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__rx_error = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 2203874896373106324ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__rx_busy = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 2563934754365379492ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__state = VL_SCOPED_RAND_RESET_I(2, __VscopeHash, 7213262231724372337ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__tick_count = VL_SCOPED_RAND_RESET_I(4, __VscopeHash, 2420053057673682193ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__bit_index = VL_SCOPED_RAND_RESET_I(3, __VscopeHash, 1712704514218805208ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__rx_shift_reg = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 14788497618005793542ull);
+    vlSelf->UART_RX_tl__DOT__uart_rx_inst__DOT__rx_prev = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 5653934808326056794ull);
     for (int __Vi0 = 0; __Vi0 < 1; ++__Vi0) {
         vlSelf->__VstlTriggered[__Vi0] = 0;
     }
@@ -222,8 +227,8 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     for (int __Vi0 = 0; __Vi0 < 1; ++__Vi0) {
         vlSelf->__VactTriggered[__Vi0] = 0;
     }
-    vlSelf->__Vtrigprevexpr___TOP__UART_TX_tl__DOT__baud_gen_inst__DOT__clk__0 = 0;
-    vlSelf->__Vtrigprevexpr___TOP__UART_TX_tl__DOT__uart_tx_inst__DOT__clk__0 = 0;
+    vlSelf->__Vtrigprevexpr___TOP__UART_RX_tl__DOT__baud_gen_inst__DOT__clk__0 = 0;
+    vlSelf->__Vtrigprevexpr___TOP__UART_RX_tl__DOT__uart_rx_inst__DOT__clk__0 = 0;
     for (int __Vi0 = 0; __Vi0 < 1; ++__Vi0) {
         vlSelf->__VnbaTriggered[__Vi0] = 0;
     }

@@ -31,9 +31,9 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop__Syms final : public VerilatedSyms {
 
     // SCOPE NAMES
     VerilatedScope* __Vscopep_TOP;
-    VerilatedScope* __Vscopep_UART_TX_tl;
-    VerilatedScope* __Vscopep_UART_TX_tl__baud_gen_inst;
-    VerilatedScope* __Vscopep_UART_TX_tl__uart_tx_inst;
+    VerilatedScope* __Vscopep_UART_RX_tl;
+    VerilatedScope* __Vscopep_UART_RX_tl__baud_gen_inst;
+    VerilatedScope* __Vscopep_UART_RX_tl__uart_rx_inst;
 
     // SCOPE HIERARCHY
     VerilatedHierarchy __Vhier;
