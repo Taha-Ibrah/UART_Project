@@ -130,6 +130,17 @@ module UART_RX(
                 end
             end
             STOP: begin
+                // FIXED: rx_done/rx_error must be single-CLOCK-CYCLE pulses, not
+                // held across the whole rest of STOP. Previously rx_done <= 1'b1
+                // was set at tick_count==8 and only cleared at tick_count==15 —
+                // that's ~7 ticks (thousands of clk cycles) of rx_done sitting
+                // high, during which UART.sv's RX FIFO (wr_en tied to rx_done)
+                // pushed the same byte in on every single clock edge, filling
+                // the FIFO with 16 copies of one received byte instead of 1.
+                // Defaulting low here every cycle, and only pulsing high for the
+                // exact tick_count==8 edge below, makes it a true 1-cycle pulse.
+                rx_done  <= 1'b0;
+                rx_error <= 1'b0;
                 if(tick) begin
                     if(tick_count == 4'd8) begin
                         if(rx==1'b1)begin
@@ -138,7 +149,7 @@ module UART_RX(
                         else begin
                             rx_error <=1'b1;
                             // REMOVED: "state<=IDLE;" here — jumping straight to IDLE on
-                            // error meant tick_count never reached 15, so rx_busy/rx_done
+                            // error meant tick_count never reached 15, so rx_busy
                             // never got cleared on the error path either (same stuck bug)
                         end
                         // ADDED: this increment was missing, so tick_count got stuck at 8
@@ -149,7 +160,6 @@ module UART_RX(
                     else if(tick_count == 4'd15) begin
                         tick_count <= '0;
                         rx_busy <='0;
-                        rx_done <= 1'b0; // ADDED: clear the done pulse so it's only high 1 cycle
                         state<=IDLE; //done. Not doing anything.
                     end
                     else begin
