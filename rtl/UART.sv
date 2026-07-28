@@ -42,6 +42,7 @@ module UART(
     //--- Serial pins (the actual two UART wires) ---
     input  logic rx, //incoming serial line (from the other device's TX)
     output logic tx  //outgoing serial line (to the other device's RX)
+    //These pins are NOT internal because they are not part of the Integrated UART Circuit
 );
 
     //Shared internal timing signal (not a port: nothing outside needs it).

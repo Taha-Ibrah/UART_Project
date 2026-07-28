@@ -56,7 +56,7 @@ module UART_RX(
             rx_done <= 1'b0;
             bit_index <= 3'b0;
             tick_count <= 4'b0;
-        end else begin // ADDED: else — without it, case(state) ran every cycle even during reset and clobbered the reset values
+        end else begin
             // ADDED: unconditional rx_prev update — this was never assigned before, so edge detection could never see a transition after cycle 1
             rx_prev <= rx;
             case(state)
@@ -71,8 +71,8 @@ module UART_RX(
                     // forcing state to START immediately regardless of rx
                     //Signals that rx transitioned high-to-low
                     rx_busy <= 1'b1;
-                    tick_count <= '0; // FIXED: was 1'b0 (1-bit const truncated/expanded into 4-bit tick_count)
-                    bit_index <= '0; // FIXED: was 1'b0 (1-bit const truncated/expanded into 3-bit bit_index)
+                    tick_count <= '0;
+                    bit_index <= '0;
                     state<= START; //officially starting
                 end
 
@@ -168,7 +168,7 @@ module UART_RX(
                 end
             end
             endcase
-        end // ADDED: closes the "else begin" added above at reset check
+        end
     end
 
 

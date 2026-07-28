@@ -36,7 +36,7 @@ module FIFO#(
 
     //Storage: DEPTH slots, each DATA_WIDTH bits wide.
     logic[DATA_WIDTH-1: 0] mem [0: DEPTH-1];
-    //UNPACKED RANGE: describges array indices - which element of the array, not bits within a word
+    //UNPACKED RANGE: describes array indices - which element of the array, not bits within a word
 
     //Pointers to the next slot to write/read. They wrap automatically
     //Because they are exactly ADDR_WIDTH bits wide (15+1 -> 0)
@@ -90,8 +90,8 @@ module FIFO#(
             count <= '0;
         end else begin
             case({wr_en && !full , rd_en && !empty})
-                2'b10: count <= count + 1; //write only
-                2'b01: count <= count - 1;
+                2'b10: count <= count + 1; //write when not full
+                2'b01: count <= count - 1; //read when not empty
                 default: count <= count;
             endcase
         end
