@@ -22,7 +22,7 @@ The design is verified using cocotb testbenches running with Verilator.
 
 ## Architecture
 
-```
+```text
                     UART System
 
           TX Path                     RX Path
@@ -56,7 +56,7 @@ Generates the timing tick used by the UART transmitter and receiver. The design 
 
 For a 50 MHz system clock and 9600 baud:
 
-```
+```text
 Oversampling frequency = 9600 × 16 = 153,600 Hz
 
 Divisor ≈ 50,000,000 / 153,600 ≈ 325
@@ -124,27 +124,25 @@ Self-checking tests compare simulated outputs against expected UART behavior.
 ## Project Structure
 
 ```text
-uart/
+UART_Project/
 ├── rtl/
 │   ├── baud_gen.sv
-│   ├── uart_tx.sv
-│   ├── uart_rx.sv
-│   ├── fifo.sv
-│   └── uart_top.sv
-│
+│   ├── FIFO.sv
+│   ├── UART.sv
+│   ├── UART_RX.sv
+│   ├── UART_RX_tl.sv
+│   ├── UART_TX.sv
+│   └── UART_TX_tl.sv
 ├── tb/
-│   ├── test_baud_gen.py
-│   ├── test_uart_tx.py
-│   ├── test_uart_rx.py
-│   └── test_fifo.py
-│   └── makefile
-│
-├
+│   ├── baud_gen_test.py
+│   ├── UART_RX_test.py
+│   ├── UART_TX_test.py
+│   ├── UART_test.py
+│   └── Makefile
 └── README.md
 ```
 
-*File names and directory structure may differ from the actual repository.*
-
+Verilator and cocotb generate additional simulation artifacts under `tb/sim_build/`, as well as `tb/results.xml` and Python cache files. These generated files are not shown above.
 
 ## Purpose
 
