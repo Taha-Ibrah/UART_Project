@@ -132,13 +132,14 @@ uart/
 │   ├── fifo.sv
 │   └── uart_top.sv
 │
-├── tests/
+├── tb/
 │   ├── test_baud_gen.py
 │   ├── test_uart_tx.py
 │   ├── test_uart_rx.py
 │   └── test_fifo.py
+│   └── makefile
 │
-├── Makefile
+├
 └── README.md
 ```
 
